@@ -16,7 +16,7 @@
 	ignored = !git ls-files -v | grep \"^S\"
 	aliases = config --get-regexp alias
 	contributors = shortlog --summary --numbered
-	whoami = config user.email
+	whoami = "!echo $(git config user.name) \"<\"$(git config user.email)\">\""
 	tags = tag -l
 	branches = branch -a
 	remotes = remote -v
