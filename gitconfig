@@ -10,7 +10,7 @@
 	ca = !git add -A && git commit -av  # commit all changes
 	pullc = "!git pull origin \"$(git rev-parse --abbrev-ref HEAD)\""
 	pushc = "!git push origin \"$(git rev-parse --abbrev-ref HEAD)\""
-	pushcf = "!git push -f origin \"$(git rev-parse --abbrev-ref HEAD)\""
+	pushcf = "!git push --force-with-lease origin \"$(git rev-parse --abbrev-ref HEAD)\""
 	ignore = update-index --skip-worktree
 	unignore = update-index --no-skip-worktree
 	ignored = !git ls-files -v | grep \"^S\"
