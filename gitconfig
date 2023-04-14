@@ -20,6 +20,7 @@
 	tags = tag -l
 	branches = branch -a
 	remotes = remote -v
+	rmu = "!git clean -f -x"
 
 [core]
 	excludesfile = ~/.gitignore_global
