@@ -8,7 +8,7 @@
 	ci = commit
 	st = status
 	ca = !git add -A && git commit -av  # commit all changes
-        ap = !git add -A && git commit --amend --no-edit  # add current changes to previous commit
+        A = !git add -A && git commit --amend --no-edit  # add current changes to previous commit
 	pullc = "!git pull origin \"$(git rev-parse --abbrev-ref HEAD)\""
 	pushc = "!git push origin \"$(git rev-parse --abbrev-ref HEAD)\""
 	pushcf = "!git push --force-with-lease origin \"$(git rev-parse --abbrev-ref HEAD)\""
